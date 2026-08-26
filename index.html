@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body{
+                font-size:20px;
+            }
+        </style>
        <meta charset="UTF-8">
         <meta name="viewport"
         content="width=device-width">
@@ -43,7 +48,7 @@
         
         
         <input type="file" id="imageinput" accept="image/*">
-        <img id="preview" width="250">
+        <img id="preview" width="80%">
         <script>
                 let imageinput= 
                 document.getelementbyid("imageinput");
@@ -54,7 +59,7 @@
                     document.getelementbyid("preview").src=imageURL;
                 };
         </script>
-        <video width="300" height="300" controls>
+        <video width="100%" controls>
             <source src="video1.mp4">
         </video>
         <br>
